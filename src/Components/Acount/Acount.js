@@ -13,7 +13,7 @@ const Acount = () => {
                     name="management-type"
                     className="form-select form-control col"
                   >
-                    <option value="0">회원구분</option>
+                    <option defaultValue="0">회원구분</option>
                     <option value="1">사내관리자</option>
                     <option value="2">DSP</option>
                     <option value="3">퍼블리셔</option>
@@ -24,7 +24,7 @@ const Acount = () => {
                     name="admin-type"
                     className="form-select form-control col"
                   >
-                    <option value="0">담당자</option>
+                    <option defaultValue="0">담당자</option>
                     <option value="1">장동건</option>
                     <option value="2">원빈</option>
                     <option value="3">고수</option>
@@ -37,7 +37,6 @@ const Acount = () => {
                     name="s_keyword"
                     id="s_keyword"
                     className="form-control"
-                    value=""
                     placeholder="아이디, 이름(회사명)"
                   />
                   <svg
