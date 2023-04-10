@@ -220,6 +220,10 @@ button:not(:disabled),
   text-transform: uppercase;
 }
 
+.area_gnb .gnb_cell dd a:hover {
+  text-decoration: none;
+}
+
 .area_gnb .gnb_cell dd a:visited {
   color: #c8ccd2;
 }

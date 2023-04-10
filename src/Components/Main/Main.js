@@ -14,6 +14,7 @@ import {
   Tooltip,
   Legend,
   BarElement,
+  BarController,
 } from "chart.js";
 import { Chart } from "react-chartjs-2";
 
@@ -25,7 +26,8 @@ ChartJS.register(
   Title,
   Tooltip,
   Legend,
-  BarElement
+  BarElement,
+  BarController
 );
 
 const data = {
@@ -39,7 +41,7 @@ const data = {
       label: "Dataset 1",
       borderColor: "rgb(54, 162, 235)",
       borderWidth: 2,
-      data: [1, 2, 3, 4, 5],
+      data: [1, 2, 3, 4, 5, 6],
     },
     {
       type: "bar",
