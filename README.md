@@ -6,6 +6,14 @@
 
 ### 최초 다운로드 후 해야할 것들 🐈
 
+<!-- npm install -->
+
+1. npm install -g
+2. npm dev(실행 (개발용)-config/webpack.dev.js 기반)
+3. npm build(빌드 (운영용)-config/webpack.prod.js 기반)
+
+<!-- yarn install -->
+
 1. npm install -g yarn (yarn 설치)
 2. yarn install(node_modules 다운로드)
 3. yarn dev(실행 (개발용)-config/webpack.dev.js 기반)
@@ -24,21 +32,49 @@
 
 ## 아키텍쳐
 
-### 디렉토리 구조
+### CRA 디렉토리 구조
 
 ```bash
-  ├─ config
-  │   ├─webpack.common.js
-  │   ├─webpack.dev.js
-  │   └─webpack.prod.js
   ├─ node_modules
   ├─ public
   │   └─index.html
   ├─ src
-  │   ├─App.tsx
-  │   └─index.tsx
-  ├─ .babelrc
+  │   ├─App.css
+  │   ├─App.js
+  │   ├─index.css
+  │   └─index.js
   ├─ package.json
-  ├─ tsconfig.json
+  └─ yarn.lock
+```
+
+### 기본 SSP 디렉토리 구조
+
+```bash
+  ├─ node_modules
+  ├─ public
+  │   └─index.html
+  ├─ src
+  │   ├─Api
+  │   │   └─api-caller.js
+  │   ├─Components
+  │   │   ├─Header
+  │   │   ├─Footer
+  │   │   ├─Aside
+  │   │   ├─Content
+  │   │   ├─Layout
+  │   │   └─Utils
+  │   ├─Context
+  │   ├─css
+  │   ├─img
+  │   ├─pages
+  │   ├─routes
+  │   ├─App.css
+  │   ├─App.js
+  │   ├─index.css
+  │   └─index.js
+  ├─ .babelrc
+  ├─ .env
+  ├─ README.md
+  ├─ package.json
   └─ yarn.lock
 ```
