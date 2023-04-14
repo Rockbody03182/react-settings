@@ -4,30 +4,6 @@ import Home from "./pages/Home";
 import { Provider } from "./Context/index";
 import { CookiesProvider } from "react-cookie";
 
-// 실서버 배포시 삭제
-// import {
-//   AppContent,
-//   Header,
-//   Footer,
-//   Aside,
-//   ContentHeader,
-// } from "./Components/Pull/index";
-// const DefaultLayout = () => {
-//   return (
-//     <div className="page--auction">
-//       <div id="wrap">
-//         <Aside />
-//         <Header />
-//         <div className="main-container">
-//           <ContentHeader />
-//           <AppContent />
-//         </div>
-//         <Footer />
-//       </div>
-//     </div>
-//   );
-// };
-
 const loading = (
   <div className="pt-3 text-center">
     <div className="sk-spinner sk-spinner-pulse"></div>

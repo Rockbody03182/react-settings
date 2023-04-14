@@ -1,4 +1,4 @@
-# react18 + webpack5 + typescript Boiler plate
+# react18 + webpack5
 
 리액트18 를 이용한 스타터킷입니다.<br>
 정말 아무것도 없는 깔끔한 스타터 킷입니다.<br>
