@@ -63,7 +63,7 @@
   │   │   ├─Content : AppContent.js : 라우트 설정 부분을 감싸고 있다.
   │   │   ├─Layout : DefaultLayout.js : 뼈대 형태의 레이아웃 Header, Footer, AppContent 프로젝트에 따라 추가 적으로 프레임을 커스텀 하면된다.
   │   │   └─Utils : 여러군데서 쓸수 있는 스크립트
-  │   ├─Context
+  │   ├─Context : 전역 데이터 관리 디렉토리
   │   ├─css : css
   │   ├─img : image
   │   ├─pages :
