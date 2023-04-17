@@ -1,6 +1,6 @@
 import React, { Component, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import { Provider } from "./Context";
 import { CookiesProvider } from "react-cookie";
 
@@ -23,7 +23,7 @@ class App extends Component {
           <BrowserRouter>
             <Suspense fallback={loading}>
               <Routes>
-                <Route path="*" name={Home} element={<DefaultLayout />} />
+                <Route path="*" name="Home" element={<DefaultLayout />} />
               </Routes>
             </Suspense>
           </BrowserRouter>
