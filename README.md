@@ -47,7 +47,7 @@
   └─ yarn.lock
 ```
 
-### 기본 SSP 디렉토리 구조
+### 기본 초기세팅 디렉토리 구조
 
 ```bash
   ├─ node_modules
