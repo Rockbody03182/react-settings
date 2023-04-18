@@ -1,6 +1,5 @@
 import React, { Component, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import Home from "./pages/Home";
 import { Provider } from "./Context";
 import { CookiesProvider } from "react-cookie";
 
