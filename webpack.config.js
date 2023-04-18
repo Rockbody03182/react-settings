@@ -1,6 +1,5 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const WebpackAssetsManifest = require("webpack-assets-manifest");
 
 module.exports = {
   // 입력 파일
@@ -26,20 +25,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "public", "index.html"),
     }),
-    // new WebpackAssetsManifest({
-    //   output: "asset-manifest.json",
-    //   customize(entry, original, manufest, asset) {
-    //     return {
-    //       key: `${entry.key.replace("app", "main")}`,
-    //       value: `${entry.value}`,
-    //     };
-    //   },
-    //   transform(assets, manifest) {
-    //     return {
-    //       files: assets,
-    //     };
-    //   },
-    // }),
   ],
   module: {
     // exclude node_modules
@@ -48,6 +33,10 @@ module.exports = {
         test: /\.(js|jsx)$/, // <-- added `|jsx` here
         exclude: /node_modules/,
         use: ["babel-loader"],
+      },
+      {
+        test: /\.(sa|sc|c)ss$/i,
+        use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],
       },
     ],
   },
