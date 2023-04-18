@@ -2,11 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 
-// css
-import "../../css/reset.css"; // reset css UI 침해시 삭제
-import "../../css/common.css";
-import "../../css/style.css";
-
 const Header = () => {
   const [MiddleName, setMiddleName] = useState("");
   const [smallName, setSmallName] = useState("");

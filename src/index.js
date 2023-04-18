@@ -4,6 +4,11 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+// css
+import "./css/reset.css"; // reset css UI 침해시 삭제
+import "./css/common.css";
+import "./css/style.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 createRoot(document.getElementById("root")).render(<App />);
 

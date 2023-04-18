@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 const Acount = () => {
   return (
     <div className="container-fluid contents-wrap main_cont">
