@@ -5,7 +5,6 @@ import { Button } from "react-bootstrap";
 // import { useNavigate } from "react-router-dom";
 // import { ApiCaller } from "../../Api/api-caller";
 // import { useCookies } from "react-cookie";
-// 코인 물타기 계산기 Component
 
 const Aside = () => {
   // const navigate = useNavigate();
