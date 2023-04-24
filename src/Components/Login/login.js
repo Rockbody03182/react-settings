@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useCookies } from "react-cookie";
+
 const Login = ({ header }) => {
   const navigate = useNavigate();
+  const [cookies, setCookie, removeCookie] = useCookies(["accessToken"]);
   const [userId, setUserId] = useState(""); // 아이디
   const [password, setPassword] = useState(""); // 비밀번호
 
@@ -20,9 +23,9 @@ const Login = ({ header }) => {
 
     if (userId === textId && password === correctPassword) {
       // // 로그인 성공 시 쿠키에 토큰 저장
-      // document.cookie = `token=${data.token}`;
+      setCookie("auth", "data.token", { path: "/" });
       // // 세션에 사용자 정보 저장
-      // sessionStorage.setItem("user", JSON.stringify(data.user));
+      sessionStorage.setItem("user", JSON.stringify("data.user"));
       // 로그인 성공 시 로그인 상태를 업데이트하고, 콜백 함수를 호출하여 로그인 상태를 알립니다.
       if (typeof onLogin === "function") {
         header(true);
@@ -91,7 +94,7 @@ const Login = ({ header }) => {
 								<div className="err_msg" style="color: red">
 									에러메세지입니다. 추후에 아래의 php코드를 이용하세요.
 								</div> */}
-              <button type="submit" class="btn btn-primary">
+              <button type="submit" className="btn btn-primary">
                 시작하기
               </button>
             </div>

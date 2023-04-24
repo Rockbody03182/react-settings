@@ -3,10 +3,6 @@
    License: none (public domain)
 */
 @charset "utf-8";
-.row > * {
-  padding-right: 0;
-  padding-left: 0;
-}
 html,
 body,
 div,

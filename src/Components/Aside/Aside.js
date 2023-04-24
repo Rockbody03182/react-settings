@@ -2,19 +2,24 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { gnb_corp, gnb_admin } from "../Pull/export";
 import { Button } from "react-bootstrap";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 // import { ApiCaller } from "../../Api/api-caller";
-// import { useCookies } from "react-cookie";
+import { useCookies } from "react-cookie";
 
 const Aside = () => {
-  // const navigate = useNavigate();
-  // const [cookies, setCookie, removeCookie] = useCookies(["accessToken"]);
+  const navigate = useNavigate();
+  const [cookies, setCookie, removeCookie] = useCookies(["accessToken"]);
   const [status, setStatus] = useState(false);
   const [btnCheck, setBtnCheck] = useState(false);
 
   // 어드민 로그아웃 처리
   const Terminate = async () => {
-    alert("로그아웃 처리되었습니다.");
+    console.log(cookies.auth);
+    if (cookies.auth === "data.token") {
+      alert("로그아웃 처리되었습니다.");
+      removeCookie("auth", { path: "/" });
+      navigate("/login");
+    }
     // try {
 
     //   const URL = `${process.env.REACT_APP_BACKEND_URL}/api/admin-signout`;
