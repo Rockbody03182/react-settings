@@ -3,7 +3,11 @@
   width: calc(100% - 100px);
   float: right;
 }
-
+html,
+body,
+#root {
+  height: 100%;
+}
 body {
   min-width: 1200px;
   font-family: "Noto Sans KR", sans-serif;

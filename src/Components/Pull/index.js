@@ -3,5 +3,6 @@ import AppContent from "../AppContent/AppContent";
 import ContentHeader from "../ContentHeader/ContentHeader";
 import Aside from "../Aside/Aside";
 import Footer from "../Footer/Footer";
+import Login from "../Login/Login";
 
-export { Header, Footer, AppContent, Aside, ContentHeader };
+export { Header, Footer, AppContent, Aside, ContentHeader, Login };

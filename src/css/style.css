@@ -155,3 +155,81 @@
   color: #4280ff;
 }
 /* account end */
+
+/* login start */
+.wrapper,
+.login_wrap {
+  height: 100%;
+}
+.login_box {
+  width: 1200px;
+  height: 620px;
+}
+.login_box__title {
+  position: relative;
+  background: url(../img//login_title_bg.jpg) repeat-x left top;
+  width: 700px;
+  height: 100%;
+  padding: 39px 0 42px 31px;
+}
+.login_box__title .adtive_logo {
+  background: url(../img/ssp_logo.png) no-repeat center center / auto;
+  width: 129px;
+  height: 44px;
+  margin-bottom: 144px;
+  text-indent: -9999px;
+}
+.login_box__title h1 {
+  color: #fff;
+  font-size: 31px;
+  margin-bottom: 14px;
+}
+.login_box__title > p {
+  color: #848a92;
+  font-size: 12px;
+}
+.login_box__title .copyright {
+  position: absolute;
+  left: 50%;
+  bottom: 31px;
+  transform: translate(-50%);
+  color: #dadada;
+  font-size: 10px;
+  font-style: italic;
+}
+.login_box__form {
+  background: #fff;
+  width: 500px;
+  height: 100%;
+  padding-top: 104px;
+}
+.login_box__form form {
+  width: 100%;
+  height: 100%;
+}
+.login_box__form form > h2 {
+  margin-bottom: 70px;
+  text-align: center;
+}
+.text-primary {
+  color: #9d62bf !important;
+  font-size: 2rem;
+}
+.login_box__form form > .form_wrap {
+  padding: 0 30px;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.form_wrap .com_box .input_tit {
+  display: block;
+  color: #363a40;
+  margin-bottom: 7px;
+}
+.form_wrap .pass_box {
+  margin-bottom: 60px;
+}
+.form_wrap button {
+  width: 100%;
+}
+/* login end */

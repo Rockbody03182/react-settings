@@ -26,7 +26,9 @@ const loading = (
 const DefaultLayout = React.lazy(() =>
   import("../src/Components/Layout/DefaultLayout")
 );
-const Login = React.lazy(() => import("../src/Components/Login/Login"));
+const LoginLayout = React.lazy(() =>
+  import("../src/Components/Layout/LoginLayout")
+);
 // const Page404 = React.lazy(() => import("./views/pages/page404/Page404"));
 // const Page500 = React.lazy(() => import("./views/pages/page500/Page500"));
 
@@ -39,8 +41,18 @@ class App extends Component {
             <BrowserRouter>
               <Suspense fallback={loading}>
                 <Routes>
-                  {/* <Route exact path="/login" name="Login Page" element={<Login />} /> */}
-                  <Route path="*" name="Home" element={<DefaultLayout />} />
+                  <Route
+                    exact
+                    path="/login"
+                    name="Home"
+                    element={<LoginLayout />}
+                  />
+                  <Route
+                    exact
+                    path="*"
+                    name="Home"
+                    element={<DefaultLayout />}
+                  />
                 </Routes>
                 <ReactQueryDevtools
                   initialIsOpen={false}

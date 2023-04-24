@@ -3,6 +3,10 @@
    License: none (public domain)
 */
 @charset "utf-8";
+.row > * {
+  padding-right: 0;
+  padding-left: 0;
+}
 html,
 body,
 div,
@@ -90,6 +94,8 @@ video {
   font-size: 100%;
   font-family: "Noto Sans KR", sans-serif;
   vertical-align: baseline;
+  padding-right: 0;
+  padding-left: 0;
 }
 /* HTML5 display-role reset for older browsers */
 article,
