@@ -2,7 +2,6 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 // const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
-// BundleAnalyzer는 Bundle 최적화 용도로 보통 사용
 
 module.exports = {
   entry: {
