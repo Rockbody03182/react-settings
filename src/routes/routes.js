@@ -5,6 +5,11 @@ const acountPages = React.lazy(() => import("../Components/Acount/Account"));
 const publisherPages = React.lazy(() => import("../Components/Publisher/PublisherLists"));
 const dspListPages = React.lazy(() => import("../Components/DSP/DspLists"));
 const mediaListPages = React.lazy(() => import("../Components/Media/MediaLists"));
+const statsListPages = React.lazy(() => import("../Components/Stats/StatsLists"));
+const statsDspPages = React.lazy(() => import("../Components/Stats/StatsDsp"));
+const statsDspDayPages = React.lazy(() => import("../Components/Stats/StatsDspDay"));
+const statsPublidsherPages = React.lazy(() => import("../Components/Stats/StatsPublisher"));
+const ZoneTypePages = React.lazy(() => import("../Components/Etc/ZoneType"));
 // const assetEdit = React.lazy(() => import("../Components/Auction/Edit/EditItem"));
 
 const routes = [
@@ -35,10 +40,15 @@ const routes = [
   /**
    * 통계/정산 관리
    */
+  { path: "/stats/lists", name: "Stats", element: statsListPages }, // 일별 통계
+  { path: "/stats/publisher", name: "Stats", element: statsPublidsherPages }, // 퍼블리셔 정산
+  { path: "/stats/dsp/day", name: "Stats", element: statsDspDayPages }, // DSP 통계
+  { path: "/stats/dsp", name: "Stats", element: statsDspPages }, // DSP 정산
 
   /**
    * 기타 관리
    */
+  { path: "/etc/zonetype", name: "Etc", element: ZoneTypePages }, // 영역 타입
 ];
 
 export default routes;
