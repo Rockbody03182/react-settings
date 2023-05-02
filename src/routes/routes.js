@@ -18,7 +18,7 @@ const routes = [
   /**
    * 메인
    */
-  { path: "/", exact: true, name: "Home", element: mainPages },
+  { path: "/", exact: true, name: "Home", element: acountPages },
   /**
    * 회원 관리
    */
