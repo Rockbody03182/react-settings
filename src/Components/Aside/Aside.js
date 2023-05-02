@@ -110,7 +110,7 @@ const Aside = () => {
                     setStatus(!status);
                     setBtnCheck(1);
                   }}
-                  to={"/acount"}
+                  to={"/account"}
                   style={{ color: btnCheck === 1 ? "#d89dff" : "#c8ccd2" }}
                 >
                   회원 관리
@@ -125,10 +125,22 @@ const Aside = () => {
                     setStatus(!status);
                     setBtnCheck(2);
                   }}
-                  to={"/publisher_list"}
+                  to={"/publisher/lists"}
                   style={{ color: btnCheck === 2 ? "#d89dff" : "#c8ccd2" }}
                 >
-                  영역 관리
+                  영역 현황
+                </Link>
+              </dd>
+              <dd>
+                <Link
+                  onClick={(e) => {
+                    setStatus(!status);
+                    setBtnCheck(3);
+                  }}
+                  to={"/publisher/listinfo"}
+                  style={{ color: btnCheck === 3 ? "#d89dff" : "#c8ccd2" }}
+                >
+                  노출 관리
                 </Link>
               </dd>
             </dl>
@@ -138,10 +150,10 @@ const Aside = () => {
                 <Link
                   onClick={(e) => {
                     setStatus(!status);
-                    setBtnCheck(3);
+                    setBtnCheck(4);
                   }}
-                  to={"/dsp_list"}
-                  style={{ color: btnCheck === 3 ? "#d89dff" : "#c8ccd2" }}
+                  to={"/dsp/lists"}
+                  style={{ color: btnCheck === 4 ? "#d89dff" : "#c8ccd2" }}
                 >
                   {/* <Link onClick={(e) => setStatus(!status)} to={encodeURIComponent("/DSP/DspList")}> */}
                   광고 관리
@@ -154,10 +166,10 @@ const Aside = () => {
                 <Link
                   onClick={(e) => {
                     setStatus(!status);
-                    setBtnCheck(4);
+                    setBtnCheck(5);
                   }}
-                  to={"/media_list"}
-                  style={{ color: btnCheck === 4 ? "#d89dff" : "#c8ccd2" }}
+                  to={"/media/lists"}
+                  style={{ color: btnCheck === 5 ? "#d89dff" : "#c8ccd2" }}
                 >
                   매체 리스트
                 </Link>
@@ -165,23 +177,69 @@ const Aside = () => {
             </dl>
             <dl className="gnb_cell clearfix">
               <dt>통계/정산 관리</dt>
-              <dd>일별 통계</dd>
-              <dd>퍼블리셔 정산</dd>
-              <dd>DSP 정산</dd>
+              <dd>
+                <Link
+                  onClick={(e) => {
+                    setStatus(!status);
+                    setBtnCheck(6);
+                  }}
+                  to={"/stats/lists"}
+                  style={{ color: btnCheck === 6 ? "#d89dff" : "#c8ccd2" }}
+                >
+                  일별 통계
+                </Link>
+              </dd>
+              <dd>
+                <Link
+                  onClick={(e) => {
+                    setStatus(!status);
+                    setBtnCheck(7);
+                  }}
+                  to={"/stats/publisher"}
+                  style={{ color: btnCheck === 7 ? "#d89dff" : "#c8ccd2" }}
+                >
+                  퍼블리셔 정산
+                </Link>
+              </dd>
+              <dd>
+                <Link
+                  onClick={(e) => {
+                    setStatus(!status);
+                    setBtnCheck(8);
+                  }}
+                  to={"/stats/dsp/day"}
+                  style={{ color: btnCheck === 8 ? "#d89dff" : "#c8ccd2" }}
+                >
+                  DSP 통계
+                </Link>
+              </dd>
+              <dd>
+                <Link
+                  onClick={(e) => {
+                    setStatus(!status);
+                    setBtnCheck(9);
+                  }}
+                  to={"/stats/dsp"}
+                  style={{ color: btnCheck === 9 ? "#d89dff" : "#c8ccd2" }}
+                >
+                  DSP 정산
+                </Link>
+              </dd>
             </dl>
             <dl className="gnb_cell clearfix">
-              <dt>시스템 관리(협의 후 개발)</dt>
-              <dd>외부데이터 관리</dd>
-              <dd>기타 데이터 설정</dd>
-              <dd>통계</dd>
-            </dl>
-            <dl className="gnb_cell clearfix">
-              <dt>퍼블리셔 회원</dt>
-              <dd>회원 정보</dd>
-              <dd>광고 영역</dd>
-              <dd>일별 수익</dd>
-              <dd>영역별 기간 수익</dd>
-              <dd>월별 수익</dd>
+              <dt>기타 관리</dt>
+              <dd>
+                <Link
+                  onClick={(e) => {
+                    setStatus(!status);
+                    setBtnCheck(10);
+                  }}
+                  to={"/etc/zonetype"}
+                  style={{ color: btnCheck === 10 ? "#d89dff" : "#c8ccd2" }}
+                >
+                  영역 타입
+                </Link>
+              </dd>
             </dl>
           </div>
         </div>
