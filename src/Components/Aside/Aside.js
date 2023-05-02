@@ -18,7 +18,7 @@ const Aside = () => {
     if (cookies.auth === "data.token") {
       alert("로그아웃 처리되었습니다.");
       removeCookie("auth", { path: "/" });
-      navigate("/login");
+      navigate("/Login");
     }
     // try {
 
@@ -110,7 +110,7 @@ const Aside = () => {
                     setStatus(!status);
                     setBtnCheck(1);
                   }}
-                  to={"/account"}
+                  to={"/member/account"}
                   style={{ color: btnCheck === 1 ? "#d89dff" : "#c8ccd2" }}
                 >
                   회원 관리

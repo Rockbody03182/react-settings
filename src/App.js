@@ -4,6 +4,7 @@ import { Provider } from "./Context";
 import { CookiesProvider } from "react-cookie";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
+import Page404 from '../src/Components/Pages/Page404';
 
 // Create a client
 const queryClient = new QueryClient({
@@ -29,7 +30,7 @@ const DefaultLayout = React.lazy(() =>
 const LoginLayout = React.lazy(() =>
   import("../src/Components/Layout/LoginLayout")
 );
-// const Page404 = React.lazy(() => import("./views/pages/page404/Page404"));
+// const Page404 = React.lazy(() => import("../src/Components/Pages/Page404"));
 // const Page500 = React.lazy(() => import("./views/pages/page500/Page500"));
 
 class App extends Component {
@@ -43,8 +44,8 @@ class App extends Component {
                 <Routes>
                   <Route
                     exact
-                    path="/login"
-                    name="Home"
+                    path="/Login"
+                    name="Login"
                     element={<LoginLayout />}
                   />
                   <Route
@@ -53,6 +54,11 @@ class App extends Component {
                     name="Home"
                     element={<DefaultLayout />}
                   />
+                  {/* <Route
+                    path="*"
+                    name="Page 404"
+                    element={<Page404 />}
+                  /> */}
                 </Routes>
                 <ReactQueryDevtools
                   initialIsOpen={false}
