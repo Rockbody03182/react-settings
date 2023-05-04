@@ -27,6 +27,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "public/index.html",
+      meta: {
+        'Content-Type': { charset: 'utf-8', 'http-equiv': 'Content-Type', content: 'text/html' },
+      },
     }),
     new webpack.ProvidePlugin({
       React: "react",
