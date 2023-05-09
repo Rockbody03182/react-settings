@@ -24,7 +24,7 @@ const ZoneTypePages = React.lazy(() => import("../Components/Pages/Etc/ZoneType"
 const routes = [
   // { path: "/home/account", name: "Acount", element: acountPages },
   // { path: "/user/edit/:key1/:key2/:key3", name: "Edit", element: assetEdit },
-  { path: "/", exact: true, name: "Home", element: acountPages },
+  { path: "/member/account", exact: true, name: "Home", element: acountPages },
   { path: "/Login", name: "Login", element: loginPages },
   { path: "/member/account", name: "Acount", element: acountPages }, // 회원 관리
   { path: "/publisher/lists", name: "Publisher Lists", element: publisherPages }, // 영역 현황
