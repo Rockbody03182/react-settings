@@ -31,7 +31,7 @@ const Login = ({ header }) => {
         header(true);
       }
       alert("로그인 성공!");
-      navigate("/");
+      navigate("/member/account");
     } else {
       // 로그인 실패 시 에러 처리를 진행합니다.
       alert("로그인 실패!");
