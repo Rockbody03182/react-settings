@@ -61,7 +61,7 @@ const Aside = () => {
                 setStatus(false);
                 setBtnCheck(0);
               }}
-              to="/"
+              to="/member/account"
             ></Link>
           </h1>
         </div>
@@ -84,18 +84,20 @@ const Aside = () => {
           className="sidebar-expend"
           style={{ marginLeft: status === false ? "-350px" : "100px" }}
         >
-          <ul className="area-user d-flex align-items-center mb-4 pb-1">
-            <li className="flex-grow-1 d-flex align-items-center">
-              <i className="ico-user">
-                <img src={gnb_admin} alt="aside"></img>
-              </i>
-              <span>관리자</span>
-            </li>
-            <li>
+          <ul className="area-user d-flex align-items-center mb-4">
+            <li className="flex-grow-1 d-flex align-items-center" 
+            style={{justifyContent:"space-between", paddingBottom:"10px"}}>
+              <p className="d-flex align-items-center">
+                <i className="ico-user">
+                  <img src={gnb_admin} alt="aside"></img>
+                </i>
+                <span>관리자</span>
+              </p>
               <Button
                 className="btn f-dotum"
                 type="button"
                 onClick={(e) => Terminate()}
+                style={{border:"none"}}
               >
                 Sign out
               </Button>
