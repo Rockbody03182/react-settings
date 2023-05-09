@@ -1,24 +1,24 @@
 import React from "react";
 
-const mainPages = React.lazy(() => import("../Components/Main/Main"));
+// const mainPages = React.lazy(() => import("../Components/Main/Main"));
 // 회원관리 및 메인
-const acountPages = React.lazy(() => import("../Components/Acount/Account"));
+const acountPages = React.lazy(() => import("../Components/Pages/Acount/Account"));
 // 로그인
 const loginPages = React.lazy(() => import("../Components/Layout/LoginLayout"));
 // 퍼블리셔 관리
-const publisherPages = React.lazy(() => import("../Components/Publisher/PublisherLists"));
-const publisherListInfoPages = React.lazy(() => import("../Components/Publisher/PublisherListInfo"));
+const publisherPages = React.lazy(() => import("../Components/Pages/Publisher/PublisherLists"));
+const publisherListInfoPages = React.lazy(() => import("../Components/Pages/Publisher/PublisherListInfo"));
 // DSP 관리
-const dspListPages = React.lazy(() => import("../Components/DSP/DspLists"));
+const dspListPages = React.lazy(() => import("../Components/Pages/DSP/DspLists"));
 // 매체 관리
-const mediaListPages = React.lazy(() => import("../Components/Media/MediaLists"));
+const mediaListPages = React.lazy(() => import("../Components/Pages/Media/MediaLists"));
 // 통계/정산 관리
-const statsListPages = React.lazy(() => import("../Components/Stats/StatsLists"));
-const statsDspPages = React.lazy(() => import("../Components/Stats/StatsDsp"));
-const statsDspDayPages = React.lazy(() => import("../Components/Stats/StatsDspDay"));
-const statsPublidsherPages = React.lazy(() => import("../Components/Stats/StatsPublisher"));
+const statsListPages = React.lazy(() => import("../Components/Pages/Stats/StatsLists"));
+const statsDspPages = React.lazy(() => import("../Components/Pages/Stats/StatsDsp"));
+const statsDspDayPages = React.lazy(() => import("../Components/Pages/Stats/StatsDspDay"));
+const statsPublidsherPages = React.lazy(() => import("../Components/Pages/Stats/StatsPublisher"));
 // 기타 관리
-const ZoneTypePages = React.lazy(() => import("../Components/Etc/ZoneType"));
+const ZoneTypePages = React.lazy(() => import("../Components/Pages/Etc/ZoneType"));
 // const assetEdit = React.lazy(() => import("../Components/Auction/Edit/EditItem"));
 
 const routes = [
