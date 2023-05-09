@@ -137,7 +137,7 @@ const Aside = () => {
                     setStatus(!status);
                     setBtnCheck(3);
                   }}
-                  to={"/publisher/listinfo"}
+                  to={"/publisher/listInfo"}
                   style={{ color: btnCheck === 3 ? "#d89dff" : "#c8ccd2" }}
                 >
                   노출 관리
@@ -207,7 +207,7 @@ const Aside = () => {
                     setStatus(!status);
                     setBtnCheck(8);
                   }}
-                  to={"/stats/dsp/day"}
+                  to={"/stats/dsp-day"}
                   style={{ color: btnCheck === 8 ? "#d89dff" : "#c8ccd2" }}
                 >
                   DSP 통계
