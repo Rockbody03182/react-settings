@@ -6,10 +6,10 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // css
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./css/reset.css"; // reset css UI 침해시 삭제
-import "./css/common.css";
-import "./css/style.css";
-import "./css/font.css";
+import "./styles/reset.css"; // reset css UI 침해시 삭제
+import "./styles/common.css";
+import "./styles/style.css";
+import "./styles/font.css";
 
 createRoot(document.getElementById("root")).render(<App />);
 

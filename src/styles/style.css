@@ -167,13 +167,13 @@
 }
 .login_box__title {
   position: relative;
-  background: url(../img//login_title_bg.jpg) repeat-x left top;
+  background: url(../images//login_title_bg.jpg) repeat-x left top;
   width: 700px;
   height: 100%;
   padding: 39px 0 42px 31px;
 }
 .login_box__title .adtive_logo {
-  background: url(../img/ssp_logo.png) no-repeat center center / auto;
+  background: url(../images/ssp_logo.png) no-repeat center center / auto;
   width: 129px;
   height: 44px;
   margin-bottom: 144px;

@@ -4,7 +4,7 @@ import { useCookies } from "react-cookie";
 
 // routes config
 import routes from "../../routes/routes";
-import Page404 from "../Pages/Page404";
+// import Page404 from "../../pages/Page404";
 
 const AppContent = () => {
   const [cookies, setCookie, removeCookie] = useCookies(["accessToken"]);

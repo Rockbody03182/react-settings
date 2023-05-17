@@ -11,5 +11,5 @@ export function lazyLoad(path, namedExport) {
   });
 }
 
-lazyLoad("./Components/Layout/DefaultLayout", "DefaultLayout");
+lazyLoad("./components/Layout/DefaultLayout", "DefaultLayout");
 export default lazyLoad;

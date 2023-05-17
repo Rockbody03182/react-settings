@@ -1,10 +1,10 @@
-import comm from "../../img/comm.png";
-import gnb_admin from "../../img/gnb_admin.png";
-import gnb_corp from "../../img/gnb_corp.png";
-import paging_next from "../../img/paging_next.png";
-import paging_prev from "../../img/paging_prev.png";
-import select2 from "../../img/select2.png";
-import ssp_logo from "../../img/ssp_logo.png";
+import comm from "../../images/comm.png";
+import gnb_admin from "../../images/gnb_admin.png";
+import gnb_corp from "../../images/gnb_corp.png";
+import paging_next from "../../images/paging_next.png";
+import paging_prev from "../../images/paging_prev.png";
+import select2 from "../../images/select2.png";
+import ssp_logo from "../../images/ssp_logo.png";
 
 // 필요이미지
 

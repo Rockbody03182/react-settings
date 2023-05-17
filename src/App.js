@@ -4,7 +4,7 @@ import { Provider } from "./Context";
 import { CookiesProvider } from "react-cookie";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
-import Page404 from '../src/Components/Pages/Page404';
+// import Page404 from '../src/pages/Page404.js';
 
 // Create a client
 const queryClient = new QueryClient({
@@ -25,12 +25,12 @@ const loading = (
 
 // react lazy 코드 스플리팅
 const DefaultLayout = React.lazy(() =>
-  import("../src/Components/Layout/DefaultLayout")
+  import("../src/components/layouts/DefaultLayout")
 );
 const LoginLayout = React.lazy(() =>
-  import("../src/Components/Layout/LoginLayout")
+  import("./components/layouts/LoginLayout")
 );
-// const Page404 = React.lazy(() => import("../src/Components/Pages/Page404"));
+// const Page404 = React.lazy(() => import("../src/components/Pages/Page404"));
 // const Page500 = React.lazy(() => import("./views/pages/page500/Page500"));
 
 class App extends Component {

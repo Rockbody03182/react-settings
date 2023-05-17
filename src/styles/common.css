@@ -115,7 +115,7 @@ button:not(:disabled),
   width: 69px;
   height: 20px;
   text-indent: -9999em;
-  background: url(../img/comm.png) -156px -107px;
+  background: url(../images/comm.png) -156px -107px;
 }
 
 .sidebar-basic {
@@ -144,7 +144,7 @@ button:not(:disabled),
   height: 19px;
   text-indent: -9999em;
   vertical-align: middle;
-  background: url(../img/comm.png) -219px -52px;
+  background: url(../images/comm.png) -219px -52px;
 }
 /* aside basic end */
 
