@@ -46,7 +46,7 @@
   ├─ package.json
   └─ yarn.lock
 ```
-
+<!-- 
 ### 기본 초기세팅 디렉토리 구조
 
 ```bash
@@ -78,4 +78,4 @@
 ├─ README.md
 └─ package.json
 ```
-### 푸시 테스트
+### 푸시 테스트 -->
