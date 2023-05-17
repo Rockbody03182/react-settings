@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { gnb_corp, gnb_admin } from "../Pull/export";
+import { gnb_corp, gnb_admin } from "../../Pull/export";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 // import { ApiCaller } from "../../Api/api-caller";

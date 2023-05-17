@@ -3,7 +3,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { useCookies } from "react-cookie";
 
 // routes config
-import routes from "../../routes/routes";
+import routes from "../../../routes/routes";
 // import Page404 from "../../pages/Page404";
 
 const AppContent = () => {

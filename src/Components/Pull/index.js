@@ -1,8 +1,7 @@
-import Header from "../Header/Header";
-import AppContent from "../AppContent/AppContent";
-import ContentHeader from "../ContentHeader/ContentHeader";
-import Aside from "../Aside/Aside";
-import Footer from "../Footer/Footer";
+import Header from "../../components/layouts/header/Header";
+import AppContent from "../layouts/appContent/AppContent";
+import ContentHeader from "../layouts/contentHeader/ContentHeader";
+import Aside from "../layouts/aside/Aside";
 import Login from "../Pages/Login/Login";
 
-export { Header, Footer, AppContent, Aside, ContentHeader, Login };
+export { Header, AppContent, Aside, ContentHeader, Login };

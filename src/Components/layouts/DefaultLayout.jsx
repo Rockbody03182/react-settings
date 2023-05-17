@@ -2,7 +2,6 @@ import React from "react";
 import {
   AppContent,
   Header,
-  Footer,
   Aside,
   ContentHeader,
 } from "../Pull/index";
@@ -17,7 +16,6 @@ const DefaultLayout = () => {
           <ContentHeader />
           <AppContent />
         </div>
-        <Footer />
       </div>
     </div>
   );
