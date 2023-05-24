@@ -1,7 +1,10 @@
 @charset "utf-8";
 #wrap {
   width: calc(100% - 100px);
-  float: right;
+}
+.page--auction{
+  display: flex;
+  justify-content: flex-end;
 }
 html,
 body,
